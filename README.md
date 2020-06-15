@@ -8,3 +8,5 @@ If you're used to AppleScript, where you have a variety of UI primitives availab
 The short answer is you can, the long answer is, using osascript with PowerShell is a pain in the keister, and the PS team should make this work better. Using osascript requires a lot of quoting that PowerShell just vomits all over. So you end up piping the command to osascript. If you read the code, this makes more sense. 
 
 Luckily, since most AppleScript UI commands tend to return records, the data is predictably and reliably strutured, so getting it into a hash table or array is straightforward. In this example, we get it into a hashtable at the end. 
+
+note that as long as it's a single step command, you should be able to use a variety of AppleScript UI primitives with powershell. 
